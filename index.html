@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dapur Batik — Pesan Makanan Online</title>
+  <meta name="description" content="Pesan Chicken Nanban, Chicken Mushrooms, Mac and Cheese, dan Es Teh Manis secara online.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">Dapur<span>Batik</span></a>
+      <nav class="nav-links">
+        <a href="#home">Beranda</a>
+        <a href="#produk">Menu</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+      <button class="cart-btn" id="openCart" aria-label="Buka keranjang">
+        🛒 <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow">Fresh • Hangat • Lezat</p>
+        <h1>Rasa Nikmat,<br>Nuansa Batik</h1>
+        <p class="hero-desc">Chicken Nanban renyah, Chicken Mushrooms gurih, Mac and Cheese creamy, dan Es Teh Manis yang segar. Pesan sekarang, langsung diproses!</p>
+        <a href="#produk" class="btn btn-gold">Pesan Sekarang</a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="medallion"><span>🍗</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEUNGGULAN -->
+  <section class="features">
+    <div class="container features-grid">
+      <div class="feature"><span>🔥</span><h4>Dimasak Fresh</h4><p>Dibuat setelah pesanan masuk</p></div>
+      <div class="feature"><span>🛵</span><h4>Antar Cepat</h4><p>Langsung sampai ke tempat kamu</p></div>
+      <div class="feature"><span>💰</span><h4>Harga Bersahabat</h4><p>Porsi pas, rasa maksimal</p></div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="products" id="produk">
+    <div class="container">
+      <div class="section-title">
+        <h2>Menu Kami</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="filters" id="filters">
+        <button class="chip active" data-cat="semua">Semua</button>
+        <button class="chip" data-cat="makanan">Makanan</button>
+        <button class="chip" data-cat="minuman">Minuman</button>
+      </div>
+
+      <div class="grid" id="productGrid"></div>
+    </div>
+  </section>
+
+  <!-- TENTANG -->
+  <section class="about" id="tentang">
+    <div class="container about-inner">
+      <h2>Tentang Kami</h2>
+      <p>Dapur Batik hadir dengan menu sederhana tapi dibuat dengan sepenuh hati. Setiap pesanan dimasak fresh dengan bahan pilihan, dikemas rapi dengan sentuhan nuansa batik khas Nusantara.</p>
+    </div>
+  </section>
+
+  <!-- KONTAK / FOOTER -->
+  <footer class="footer" id="kontak">
+    <div class="container footer-inner">
+      <div>
+        <h3>Dapur<span>Batik</span></h3>
+        <p>Kelas X-RPL</p>
+      </div>
+      <div>
+        <h4>Hubungi Kami</h4>
+        <p>WhatsApp: 0822-9911-9880</p>
+        <p>Instagram: @mamnyukk</p>
+      </div>
+      <div>
+        <h4>Jam Buka</h4>
+        <p>Setiap hari: 10.00 – 21.00</p>
+      </div>
+    </div>
+    <p class="copy">© 2026 Dapur Batik. Semua hak dilindungi.</p>
+  </footer>
+
+  <!-- CART DRAWER -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="drawer" aria-label="Keranjang belanja">
+    <div class="drawer-head">
+      <h3>Pesanan Kamu</h3>
+      <button id="closeCart" aria-label="Tutup">✕</button>
+    </div>
+    <div class="drawer-body" id="cartItems"></div>
+    <div class="drawer-foot">
+      <div class="total-row"><span>Total</span><strong id="cartTotal">Rp0</strong></div>
+      <button class="btn btn-gold full" id="checkoutBtn">Pesan via WhatsApp</button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
