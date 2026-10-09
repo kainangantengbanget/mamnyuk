@@ -5,10 +5,10 @@ const WA_NUMBER = "6282299119880";
 /* ===== DATA MENU ===== */
 // Ganti harga & deskripsi sesuai kebutuhan. c1 & c2 = warna motif batik di latar kartu.
 const products = [
-  { id: 1, name: "Chicken Nanban",   cat: "makanan", emoji: "🍗", desc: "Ayam goreng crispy ala Jepang dengan saus nanban asam manis dan tartar.", price: 35000, c1: "#1b2540", c2: "#c9a227", badge: "Terlaris" },
-  { id: 2, name: "Chicken Mushrooms", cat: "makanan", emoji: "🍄", desc: "Ayam dimasak dengan jamur dalam saus creamy yang gurih.",               price: 38000, c1: "#5b3a29", c2: "#f0d98a", badge: "" },
-  { id: 3, name: "Mac and Cheese",   cat: "makanan", emoji: "🧀", desc: "Makaroni lembut dengan saus keju melimpah, dipanggang hangat.",          price: 30000, c1: "#6b4a12", c2: "#f7d774", badge: "Favorit" },
-  { id: 4, name: "Es Teh Manis",     cat: "minuman", emoji: "🥤", desc: "Teh seduh segar dengan es batu, manisnya pas.",                           price: 8000,  c1: "#2d4a6b", c2: "#e8eef5", badge: "" },
+  { id: 1, name: "Chicken Nanban",   cat: "makanan", emoji: "🍗", desc: "Ayam goreng crispy ala Jepang dengan saus nanban asam manis dan tartar.", price: 15000, c1: "#1b2540", c2: "#c9a227", badge: "Terlaris" },
+  { id: 2, name: "Chicken Mushrooms", cat: "makanan", emoji: "🍄", desc: "Ayam dimasak dengan jamur dalam saus creamy yang gurih.",               price: 15000, c1: "#5b3a29", c2: "#f0d98a", badge: "" },
+  { id: 3, name: "Mac and Cheese",   cat: "makanan", emoji: "🧀", desc: "Makaroni lembut dengan saus keju melimpah, dipanggang hangat.",          price: 15000, c1: "#6b4a12", c2: "#f7d774", badge: "Favorit" },
+  { id: 4, name: "Es Teh Manis",     cat: "minuman", emoji: "🥤", desc: "Teh seduh segar dengan es batu, manisnya pas.",                           price: 5000,  c1: "#2d4a6b", c2: "#e8eef5", badge: "" },
 ];
 
 /* ===== STATE ===== */
